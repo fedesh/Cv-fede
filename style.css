@@ -1,0 +1,133 @@
+
+body{
+    background-color: rgb(113, 113, 172);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(19, 19, 20), rgb(0, 0, 0),black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease infinite;
+    padding: 0px;
+    
+    
+    }
+main{
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 4;
+    
+}
+
+.imagen1{
+    width: 600px;
+}
+.imagen2{
+    width: 700px;
+}
+
+.textoCertificate{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow:hidden ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.curso1{
+    text-decoration: none;
+    color: #b784f1;
+}
+
+.nombre{
+    font-size: 70px;
+}
+.nombre1{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.info-texto{
+    margin-left: 20px;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.pasante2{
+    margin-left: 20px;
+}
+.experiencia1{
+    margin-bottom: 0px;
+}
+.contacto{
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    background-color: rgb(32, 30, 70);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.infoPersonal{
+    height: 50%;
+
+}
+
+p{
+    font-size: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.habilidades1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades2{
+    height: 300px;
+    width: 500px;
+}
+
+h2{
+    color: rgb(233, 248, 94);
+}
+.telefono{
+   position: absolute;
+   top: 50%;
+   left: 39%;
+   justify-content:center;
+   align-items: center;
+}
+.derecho{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.decoration{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
